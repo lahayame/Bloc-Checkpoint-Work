@@ -1,6 +1,9 @@
-function Button(props) {
-return (
-<button>{props.label}</button>
-);
+function Apology(props) {
+  return <h1>Sorry, {props.name}</h1>;
 }
-ReactDOM.render(<Button label= "Log In" />);
+
+const element = <Apology name="Hannah" />;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
