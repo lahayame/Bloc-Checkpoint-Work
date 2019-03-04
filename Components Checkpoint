@@ -1,9 +1,6 @@
-function Apology(props) {
-  return <h1>Sorry, {props.name}</h1>;
+function Movie(props) {
+  return <h1>Now Showing, {props.title}</h1>;
 }
 
-const element = <Apology name="Hannah" />;
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+const element = <Movie title="Star Wars" />;
+ReactDOM.render(element, document.getElementById('root'));
