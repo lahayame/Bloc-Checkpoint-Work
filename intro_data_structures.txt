@@ -1,0 +1,49 @@
+class Line {
+  constructor(name){
+    this.names =[];
+  }
+
+  addPerson(name){
+    this.names.push(name);
+  }
+
+  findPerson(name){
+    for (let i=0; i <= this.names.length; i++){
+      if (this.names[i] === name){
+        console.log (name + " is at index" + " " + i);
+      } else {
+        console.log (name + " is not there");
+      }
+    }
+  }
+
+  cutLine(name){
+    this.names.splice(1, 0, name);
+    console.log(this.names);
+  }
+
+  leaveLine(name){
+    const index = this.names.indexOf(name);
+    if (index !== name) {
+      this.names.splice(4,1);
+    }
+    console.log(this.names);
+  }
+}
+let line = new Line();
+
+line.addPerson("Vivian");
+line.addPerson("Ava");
+line.addPerson("Josh");
+line.addPerson("Patrick");
+line.addPerson("Mike");
+
+line.cutLine("Melissa");
+line.leaveLine("Patrick");
+
+line.findPerson("Josh");
+line.findPerson("Emily");
+
+2. Someone wants to add or delete an item from their online shopping cart, but also wants the most recent item to remain first in the cart.
+
+3. They could access the times in which the items were placed in the shopping cart, and manipulate the array so that they could add and delete items.
