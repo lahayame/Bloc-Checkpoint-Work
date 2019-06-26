@@ -1,0 +1,57 @@
+1. Programmers use pseudocode in order to better understand how to code an algorithm and it is made for actual people to read, it is how you brainstorm before coding.
+
+2. Nothing would happen because it is not written in a language your computer can understand.
+
+
+
+1. 
+FUNCTION
+INPUT first number
+INPUT second number
+IF first number is greater than second number
+	PRINT first number
+ELSE
+	PRINT second number
+
+2.
+
+FUNCTION
+FOR SET counter to 0
+IF counter is less than or equal to 100
+ADD counter number iteration
+ENDFOR
+PRINT counter
+ENDIF
+END FUNCTION
+
+3.
+
+ FUNCTION searchPhonebook(entry)
+     FOR each item in phonebook
+        IF entry equals item
+            RETURN item
+            END IF
+           END FOR
+     END FUNCTION
+
+
+4. 
+var phonebook =['Amelia', 'Olivia', 'Lucas']
+
+function searchPhonebook(entry) {
+  for (var i=0; i < phonebook.length; i++) {
+    if (phonebook[i] === entry) {
+      return ('We found a match!'+ ' ' + phonebook[i]+ ' '+ 'is in our records');                                            
+             }else{
+                  return('Name not found')
+	     }
+          }
+        }
+
+searchPhonebook('Amelia');
+
+    
+
+
+
+
