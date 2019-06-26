@@ -40,7 +40,7 @@ var phonebook =['Amelia', 'Olivia', 'Lucas']
 
 function searchPhonebook(entry) {
   for (var i=0; i < phonebook.length; i++) {
-    if (phonebook[i] === entry) {
+    if (phonebook[i] == entry) {
       return ('We found a match!'+ ' ' + phonebook[i]+ ' '+ 'is in our records');                                            
              }else{
                   return('Name not found')
